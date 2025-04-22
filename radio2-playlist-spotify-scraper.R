@@ -93,13 +93,13 @@ write.csv(radioplaylistuniek, paste0("C://Users//Kantoor//Radio2playlists//playl
 #-----------------------------------------------------------------------------------------------------#
 
 #Set spotify API#
-Sys.setenv(SPOTIFY_CLIENT_ID = 'clientIDhere')
-Sys.setenv(SPOTIFY_CLIENT_SECRET = 'clientsecrethere')
+Sys.setenv(SPOTIFY_CLIENT_ID = '0d0b33feb2bb453cbaf23b44b1ce84d4')
+Sys.setenv(SPOTIFY_CLIENT_SECRET = '307c7422ba5f4e468eaeede54e4f9195')
 access_token <- get_spotify_access_token()
 
 # Client and secret#
-clientID <- "clientIDhere"
-secret <- "clientsecrethere"
+clientID <- "0d0b33feb2bb453cbaf23b44b1ce84d4"
+secret <- "307c7422ba5f4e468eaeede54e4f9195"
 
 # Get access token and write this to authorization header #
 response = POST(
@@ -215,7 +215,7 @@ merge50 <- uniekeuri50 %>%
   summarise(V1 = paste(V1, collapse = ","))
 
 #Make POST url#
-posturl50 <- list(c("https://api.spotify.com/v1/playlists/playlistidhere/tracks?uris=")) %>% paste0(merge50$V1) 
+posturl50 <- list(c("https://api.spotify.com/v1/playlists/https://open.spotify.com/playlist/5JroWtCG6VusBhEKJucSqc?si=98c02532bf1d4e12/tracks?uris=")) %>% paste0(merge50$V1) 
 
 #--------------------------------------#
 #   Prepare Batch 2                    #
@@ -230,7 +230,7 @@ merge100 <- uniekeuri100 %>%
   summarise(V1 = paste(V1, collapse = ","))
 
 #Make POST url#
-posturl100 <- list(c("https://api.spotify.com/v1/playlists/playlistidhere/tracks?uris=")) %>% paste0(merge100$V1) 
+posturl100 <- list(c("https://api.spotify.com/v1/playlists/https://open.spotify.com/playlist/5JroWtCG6VusBhEKJucSqc?si=98c02532bf1d4e12/tracks?uris=")) %>% paste0(merge100$V1) 
 #-------------------------------------------------------------------------------------------------------#
 #                                             # end #                                                 #
 #-------------------------------------------------------------------------------------------------------#
@@ -399,7 +399,7 @@ merge50 <- uniekeuri50 %>%
   summarise(V1 = paste(V1, collapse = ","))
 
 #Make POST url#
-posturl50 <- list(c("https://api.spotify.com/v1/playlists/playlistidhere/tracks?uris=")) %>% paste0(merge50$V1) 
+posturl50 <- list(c("https://api.spotify.com/v1/playlists/https://open.spotify.com/playlist/5JroWtCG6VusBhEKJucSqc?si=98c02532bf1d4e12/tracks?uris=")) %>% paste0(merge50$V1) 
 
 #--------------------------------------#
 #   Prepare Batch 2                    #
@@ -414,7 +414,7 @@ merge100 <- uniekeuri100 %>%
   summarise(V1 = paste(V1, collapse = ","))
 
 #Make POST url#
-posturl100 <- list(c("https://api.spotify.com/v1/playlists/playlistidhere/tracks?uris=")) %>% paste0(merge100$V1) 
+posturl100 <- list(c("https://api.spotify.com/v1/playlists/https://open.spotify.com/playlist/5JroWtCG6VusBhEKJucSqc?si=98c02532bf1d4e12/tracks?uris=")) %>% paste0(merge100$V1) 
 #-------------------------------------------------------------------------------------------------------#
 #                                             # end #                                                 #
 #-------------------------------------------------------------------------------------------------------#
@@ -582,7 +582,7 @@ merge50 <- uniekeuri50 %>%
   summarise(V1 = paste(V1, collapse = ","))
 
 #Make POST url#
-posturl50 <- list(c("https://api.spotify.com/v1/playlists/playlistidhere/tracks?uris=")) %>% paste0(merge50$V1) 
+posturl50 <- list(c("https://api.spotify.com/v1/playlists/https://open.spotify.com/playlist/5JroWtCG6VusBhEKJucSqc?si=98c02532bf1d4e12/tracks?uris=")) %>% paste0(merge50$V1) 
 
 #--------------------------------------#
 #   Prepare Batch 2                    #
@@ -597,7 +597,7 @@ merge100 <- uniekeuri100 %>%
   summarise(V1 = paste(V1, collapse = ","))
 
 #Make POST url#
-posturl100 <- list(c("https://api.spotify.com/v1/playlists/playlistidhere/tracks?uris=")) %>% paste0(merge100$V1) 
+posturl100 <- list(c("https://api.spotify.com/v1/playlists/https://open.spotify.com/playlist/5JroWtCG6VusBhEKJucSqc?si=98c02532bf1d4e12/tracks?uris=")) %>% paste0(merge100$V1) 
 #-------------------------------------------------------------------------------------------------------#
 #                                             # end #                                                 #
 #-------------------------------------------------------------------------------------------------------#
